@@ -1,6 +1,6 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import * as React from "react";
 
 const Header = ({ siteTitle }) => (
   <header
@@ -27,6 +27,17 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <div style={{display: `flex`, flexDirection: `row`}}>
+        <Link
+          to='/'
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        >
+          En
+        </Link>
+      </div>
     </div>
   </header>
 )
